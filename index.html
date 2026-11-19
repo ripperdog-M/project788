@@ -2,10 +2,48 @@
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <title>หน้าแรก</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แนะนำตัว | Profile</title>
+    <!-- ฟอนต์ Prompt จาก Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- เชื่อมต่อไฟล์ CSS ภายนอก -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>สวัสดีชาวโลก</h1>
-    <p>นี่คือหน้าเว็บ index.html แบบสั้นๆ</p>
+
+    <div class="profile-card">
+        <!-- แถบสีด้านบน -->
+        <div class="banner"></div>
+
+        <!-- รูปโปรไฟล์ (เปลี่ยนลิงก์รูปภาพใน src ได้เลย) -->
+        <div class="profile-img-container">
+            <img src="https://via.placeholder.com/150" alt="รูปโปรไฟล์" class="profile-img">
+        </div>
+
+        <!-- รายละเอียด -->
+        <div class="content">
+            <h1>ชื่อ - นามสกุล</h1>
+            <p class="role">ตำแหน่งงาน / สาขาที่เรียน (เช่น Web Developer)</p>
+            
+            <p class="bio">
+                สวัสดีครับ! ยินดีที่ได้รู้จัก ผมมีความสนใจในการพัฒนาเว็บไซต์และการออกแบบระบบ ชอบเรียนรู้เทคโนโลยีใหม่ๆ และดื่มกาแฟเป็นชีวิตจิตใจ
+            </p>
+
+            <!-- ทักษะหรือสิ่งที่สนใจ -->
+            <div class="skills">
+                <span class="skill-tag">HTML / CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">UI Design</span>
+                <span class="skill-tag">Network</span>
+            </div>
+
+            <!-- ปุ่มลิงก์ติดต่อ -->
+            <div class="social-links">
+                <a href="mailto:example@email.com" class="btn btn-primary">ติดต่อทางอีเมล</a>
+                <a href="https://github.com" target="_blank" class="btn btn-outline">GitHub</a>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
